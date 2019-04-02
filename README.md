@@ -68,9 +68,9 @@ The test set ([test.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-f
 
 In the submission, use the entire filename, e.g. `00123.jpg` as the Id column.
 
-* `md5sum train.tar.gz` should produce `a`
-* `md5sum validation.tar.gz` should produce `b`
-* `md5sum test.tar.gz` should produce `c`
+* `md5sum train.tar.gz` should produce `53c6b9ee2f831f5101dbe00958091dc8`
+* `md5sum validation.tar.gz` should produce `2f854d580949e54f114993a74adc3d4b`
+* `md5sum test.tar.gz` should produce `297648fb76eed1b1c6f0ca1fd8188de0`
 
 ### Small Resized Dataset
 For convenience, we have also provided a small resized dataset, where each image has been resized (preserving aspect ratios) to have a maximum of 1024 pixels in the larger dimension. The split for the resized dataset is identical to the full dataset, and the IDs also match (e.g. `test/00123.jpg` and `small-test/00123.jpg` are the same specimen). All images are in JPEG format.

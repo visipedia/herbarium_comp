@@ -36,21 +36,28 @@ Entry Deadline|June 1, 2019|
 Team Merger Deadline|June 1, 2019|
 Final Submission Deadline|June 7, 2019|
 
-## Data Split and Evaluation
+## Data Split
 The training, validation and test set contain images of herbarium specimens, from 683 species of the flowering plant family Melastomataceae.
 
 The data has been split 75%/5%/20% for training/validation/test. Each category has at least 15 instances in the training and validation datasets, and some categories have much more. Datasets are hosted on Google Cloud Platform.
 
-This competition is evaluated on the top-1 accuracy of your predictions (the percentage of images you get correct).
+## Evaluation
+The goal in this competition is to identify the category of a herbarium specimen image. The metric used in this competition is the mean top-1 classification error.
 
-## Submission File Format
-The file should contain a header and have the format below. The Id is the filename of the image in the test set.
+For every image, if the predicted category matches the ground truth category, then the error is 0. Otherwise, the error is 1. The final score is the mean error across all images.
+
+### Submission File Format
+For this competition, you are only required to predict 1 category label, but we encourage you to predict more categories so that we can analyze the top-3 and top-5 performances.
+
+The file should contain a header and have the format below. The Id column should contain the filename of the image in the test set, and the Category column should contain the predicted categories sorted by decreasing confidence:
 
     Id,Category
-    00000.jpg,0
-    00001.jpg,1
-    00002.jpg,2
+    00000.jpg,0 1 2
+    00001.jpg,10 11 12
+    00002.jpg,20 21 22
     etc.
+
+The first category will be used to compute the metric. There should be exactly one row for each test image.
 
 ## Data
 ### Terms of Use

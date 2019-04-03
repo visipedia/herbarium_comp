@@ -21,7 +21,7 @@ There are more than 400,000 known plant species with an estimated 80,000 still t
 	<img src="./2019/assets/plant5.jpg" width=150>
 </p>
 
-The family Melastomataceae, also known as the princess flower family, has more than 5,000 named species. Many of its species have extraordinary flowers. However, botanists make many of the species determinations from pressed herbarium specimens. We have 46,469 herbarium specimens that represent 685 melastome species. In addition, some species are represented by more than a hundred specimens, while others are represented by 20 specimens.
+The family Melastomataceae, also known as the princess flower family, has more than 5,000 named species. Many of its species have extraordinary flowers. However, botanists make many of the species determinations from pressed herbarium specimens. We have 46,469 herbarium specimens that represent 683 melastome species. In addition, some species are represented by more than a hundred specimens, while others are represented by 20 specimens.
 
 The teams with the most accurate models will be contacted, with the intention of using them on the un-named melastome collections in the NYBG herbarium collection, and assessed by the NYBG melastome specialist.
 
@@ -92,8 +92,23 @@ The small test set ([small-test.tar.gz](https://storage.googleapis.com/nybg/herb
 * `md5sum small-validation.tar.gz` should produce `d7e8670238a54f13b8b729823a988004`
 * `md5sum small-test.tar.gz` should produce `6da0ca3d5cb3c137cf7eebe93412c86f`
 
+## Overlap with iNaturalist 2018
+For those who may be interested in pre-training using the iNaturalist 2018 dataset: out of the 683 species, only 2 species also exist in the iNaturalist 2018 dataset:
+
+`Clidemia hirta` (iNat2018 category 7412) maps to 3 Herbarium subspecies
+
+* `Clidemia hirta var. elegans (Aubl.) Griseb.` (Herbarium category 182)
+* `Clidemia hirta var. tiliaefolia (DC.) J.F.Macbr.` (Herbarium category 302)
+* `Clidemia hirta (L.) D.Don` (Herbarium category 515)
+
+`Rhexia virginica` (iNat2018 category 7413) maps to 1 Herbarium species
+
+* `Rhexia virginica L.`, Herbarium category 629
+
+Note that herbarium specimens generally look very different from images in the wild.
+
 ## Guidelines
-The general rule is that participants should only use the provided training and validation images for training models to classify the test images. We do not want participants crawling the web in search of additional data or using previous versions of this dataset. Pretrained models may be used to construct the algorithms from publicly available academic datasets (e.g. ImageNet). Please specify any and all external data and/or models used for training when uploading results.
+The general rule is that participants should only use the provided training and validation images for training models to classify the test images. We do not want participants crawling the web in search of additional data or using previous versions of this dataset. Pretrained models may be used to construct the algorithms from publicly available academic datasets (e.g. ImageNet, iNaturalist 2017-2018). Please specify any and all external data and/or models used for training when uploading results.
 
 Participants are allowed to collect additional annotations on the provided training sets. Participants are not allowed to collect annotations on the test set. Teams should specify that they collected additional annotations when submitting results.
 

@@ -1,6 +1,6 @@
 # Herbarium Challenge 2019 - FGVC6
 
-The FGVC 2019 Herbarium Challenge challenge is to identify melastome species from herbarium specimens provided by the [New York Botanical Gardens](https://www.nybg.org/plant-research-and-conservation/) (NYBG). We have provided a curated dataset of over 46,000 herbarium specimens for over 680 species of the flowering plant family Melastomataceae.
+The FGVC 2019 Herbarium Challenge challenge is to identify melastome species from herbarium specimens provided by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) (NYBG). We have provided a curated dataset of over 46,000 herbarium specimens for over 680 species of the flowering plant family Melastomataceae.
 
 <p float="left">
 	<img src="./2019/assets/specimen1.jpg" width=150>
@@ -113,7 +113,7 @@ The general rule is that participants should only use the provided training and 
 Participants are allowed to collect additional annotations on the provided training sets. Participants are not allowed to collect annotations on the test set. Teams should specify that they collected additional annotations when submitting results.
 
 ## About
-This is an FGVCx competition hosted as part of the [FGVC6](https://sites.google.com/corp/view/fgvc6/home) workshop at CVPR 2019 and supported by the [New York Botanical Gardens](https://www.nybg.org/plant-research-and-conservation/) and [dataCommons](http://www.datacommons.org/).
+This is an FGVCx competition hosted as part of the [FGVC6](https://sites.google.com/corp/view/fgvc6/home) workshop at CVPR 2019 and supported by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) and [dataCommons](http://www.datacommons.org/).
 
 ### Acknowledgements
-Data is provided by Barbara Ambrose and Melissa Tulig (New York Botanical Gardens).
+Data is provided by Barbara Ambrose and Melissa Tulig (New York Botanical Garden).

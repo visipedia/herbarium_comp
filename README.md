@@ -1,111 +1,131 @@
-# Herbarium Challenge 2019 - FGVC6
+# Herbarium Challenge 2020 - FGVC7
 
-The FGVC 2019 Herbarium Challenge challenge is to identify melastome species from herbarium specimens provided by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) (NYBG). We have provided a curated dataset of over 46,000 herbarium specimens for over 680 species of the flowering plant family Melastomataceae.
+The Herbarium 2020 FGVC7 Challenge is to identify vascular plant species from a large, long-tailed collection herbarium specimens provided by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) (NYBG).
+
+The Herbarium 2020 dataset contains over 1M images representing over 32,000 plant species. This is a dataset with a long tail; there are a minimum of 3 specimens per species, however, some species are represented by more than a hundred specimens. This dataset only contains vascular land plants which includes lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide all of our crops, vegetables, and fruits.
 
 <p float="left">
-	<img src="./2019/assets/specimen1.jpg" width=150>
-	<img src="./2019/assets/specimen2.jpg" width=150>
-	<img src="./2019/assets/specimen3.jpg" width=150>
-	<img src="./2019/assets/specimen4.jpg" width=150>
-	<img src="./2019/assets/specimen5.jpg" width=150>
+	<img src="./2020/assets/specimen1.jpg" width=150>
+	<img src="./2020/assets/specimen2.jpg" width=150>
+	<img src="./2020/assets/specimen3.jpg" width=150>
+	<img src="./2020/assets/specimen4.jpg" width=150>
+	<img src="./2020/assets/specimen5.jpg" width=150>
 </p>
 
 ## Background
-There are more than 400,000 known plant species with an estimated 80,000 still to be discovered. In flowering plants, it takes approximately 35 years from plant collection to species description while less than 16% of new species are described in less than 5 years. It has also been suggested that ‘herbaria are a major frontier for species’ with more than 50% of unknown species already in herbarium collections.
+The New York Botanical Garden (NYBG) herbarium contains more than 7.8 million plant and fungal specimens. Herbaria are a massive repository of plant diversity data.  These collections not only represent a vast amount of plant diversity, but since herbarium collections include specimens dating back hundreds of years, they provide snapshots of plant diversity through time.  The integrity of the plant is maintained in herbaria as a pressed, dried specimen; a specimen collected nearly two hundred years ago by Darwin looks much the same as one collected a month ago by an NYBG botanist.  All specimens not only maintain their morphological features but also include collection dates and locations, and the name of the person who collected the specimen.  This information, multiplied by millions of plant collections, provides the framework for understanding plant diversity on a massive scale and learning how it has changed over time.
 
-<p float="left">
-	<img src="./2019/assets/plant1.jpg" width=150>
-	<img src="./2019/assets/plant2.jpg" width=150>
-	<img src="./2019/assets/plant3.jpg" width=150>
-	<img src="./2019/assets/plant4.jpg" width=150>
-	<img src="./2019/assets/plant5.jpg" width=150>
-</p>
+The teams with the most accurate models will be contacted, with the intention of using them on the un-named plant collections in the NYBG herbarium collection, and assessed by the NYBG plant specialists.
 
-The family Melastomataceae, also known as the princess flower family, has more than 5,000 named species. Many of its species have extraordinary flowers. However, botanists make many of the species determinations from pressed herbarium specimens. We have 46,469 herbarium specimens that represent 683 melastome species. In addition, some species are represented by more than a hundred specimens, while others are represented by 20 specimens.
+## About
+This is an FGVC competition hosted as part of the [FGVC7](https://sites.google.com/corp/view/fgvc7/home) workshop at CVPR 2020 and sponsored by [NYBG](https://www.nybg.org/plant-research-and-conservation/).
 
-The teams with the most accurate models will be contacted, with the intention of using them on the un-named melastome collections in the NYBG herbarium collection, and assessed by the NYBG melastome specialist.
 
 ## Kaggle
-The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.com/c/herbarium-2019-fgvc6)).
+The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.com/c/herbarium-2020-fgvc7)).
 
 ## Dates
 |||
 |------|---------------|
-Competition Starts|April 5, 2019|
-Entry Deadline|June 1, 2019|
-Team Merger Deadline|June 1, 2019|
-Final Submission Deadline|June 7, 2019|
-
-## Data Split
-The training, validation and test set contain images of herbarium specimens, from 683 species of the flowering plant family Melastomataceae.
-
-The data has been split 75%/5%/20% for training/validation/test. Each category has at least 15 instances in the training and validation datasets, and some categories have much more. Datasets are hosted on Google Cloud Platform.
+Competition Starts|March 9, 2020|
+Entry Deadline|May 4, 2020|
+Team Merger Deadline|May 4, 2020|
+Final Submission Deadline|May 11, 2020|
 
 ## Evaluation
-The goal in this competition is to identify the category of a herbarium specimen image. The metric used in this competition is the mean top-1 classification error.
+Competition submissions are evaluated using the [macro F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
 
-For every image, if the predicted category matches the ground truth category, then the error is 0. Otherwise, the error is 1. The final score is the mean error across all images.
+F1 is calculated as follows:
+
+<img src="https://render.githubusercontent.com/render/math?math=F_1 = 2 * \frac{precision * recall}{precision %2B recall}">
+
+where:
+
+<img src="https://render.githubusercontent.com/render/math?math=precision = \frac{TP}{TP %2B FP}">
+
+<img src="https://render.githubusercontent.com/render/math?math=recall = \frac{TP}{TP %2B FN}">
+
+In "macro" F1 a separate F1 score is calculated for each `species` value and then averaged.
 
 ### Submission File Format
-For this competition, you are only required to predict 1 category label, but we encourage you to predict more categories so that we can analyze the top-3 and top-5 performances.
 
-The file should contain a header and have the format below. The Id column should contain the filename of the image in the test set, and the Category column should contain the predicted categories sorted by decreasing confidence:
-
-    Id,Category
-    00000.jpg,0 1 2
-    00001.jpg,10 11 12
-    00002.jpg,20 21 22
-    etc.
-
-The first category will be used to compute the metric. There should be exactly one row for each test image.
 
 ## Data
 ### Terms of Use
 * You will use the data only for non-commercial research and educational purposes.
 * You will NOT distribute the images.
 
-### Full Dataset
-For the full dataset, each image has been provided as a high-resolution image, and has not been resized in any way. All images are in JPEG format.
+### Dataset Details
+The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2020-fgvc7/data).
 
-The training set ([train.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/train.tar.gz), 38 GB) contains 34,225 images, organized as subfolders `train/<category>/<id>.jpg`. Note that the image IDs are not unique across categories, e.g. `train/1/00000.jpg` and `train/2/00000.jpg` are both within the training set.
+The training and test set contain images of herbarium specimens, from over 32,000 species of vascular plants. Each image contains exactly one specimen. The text and barcode labels on the specimen images have been blurred to remove category information in the image.
 
-The validation set ([validation.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/validation.tar.gz), 3 GB) contains 2,679 images that are organized similarly to the training set, i.e. as subfolders `validation/<category>/<id>.jpg`.
+The data has been approximately split 80%/20% for training/test. Each category has at least 1 instance in both the training and test datasets. Note that the test set distribution is slightly different from the training set distribution. The training set contains species with hundreds of examples, but the test set has the number of examples per species capped at a maximum of 10.
 
-The test set ([test.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/test.tar.gz), 11 GB) contains 9,565 images without category subfolders, organized as `test/<id>.jpg`.
+Each image has different image dimensions, with a maximum of 1000 pixels in the larger dimension. These have been resized from the original image resolution. All images are in JPEG format.
 
-In the submission, use the entire filename, e.g. `00123.jpg` as the Id column.
+### Dataset Format
+This dataset uses the [COCO dataset format](http://cocodataset.org/#format-data) with additional annotation fields. In addition to the species category labels, we also provide region and supercategory information.
 
-* `md5sum train.tar.gz` should produce `53c6b9ee2f831f5101dbe00958091dc8`
-* `md5sum validation.tar.gz` should produce `2f854d580949e54f114993a74adc3d4b`
-* `md5sum test.tar.gz` should produce `297648fb76eed1b1c6f0ca1fd8188de0`
+The training set metadata (`train/metadata.json`) and test set metadata (`test/metadata.json`) are JSON files in the format below. Naturally, the test set metadata file omits the "annotations", "categories" and "regions" elements.
 
-### Small Resized Dataset
-For convenience, we have also provided a small resized dataset, where each image has been resized (preserving aspect ratios) to have a maximum of 1024 pixels in the larger dimension. The split for the resized dataset is identical to the full dataset, and the IDs also match (e.g. `test/00123.jpg` and `small-test/00123.jpg` are the same specimen). All images are in JPEG format.
+	{
+	  "annotations" : [annotation],
+	  "categories" : [category],
+	  "images" : [image],
+	  "info" : info,
+	  "licenses": [license],
+	  "regions": [region]
+	}
 
-The small training set ([small-train.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-train.tar.gz), 1.7 GB) is organized as subfolders `small-train/<category>/<id>.jpg`.
+	info {
+	  "year" : int,
+	  "version" : str,
+	  "url": str,
+	  "description" : str,
+	  "contributor" : str,
+	  "date_created" : datetime
+	}
 
-The small validation set ([small-validation.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-validation.tar.gz), 135 MB) is organized as subfolders `small-validation/<category>/<id>.jpg`.
+	image {
+	  "id" : int,
+	  "width" : int,
+	  "height" : int,
+	  "file_name" : str,
+	  "license" : int
+	}
 
-The small test set ([small-test.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-test.tar.gz), 487 MB) is organized as `small-test/<id>.jpg`.
+	annotation {
+	  "id": int,
+	  "image_id": int,
+	  "category_id": int,
+	  # Region where this specimen was collected.
+	  "region_id": int
+	}
 
-* `md5sum small-train.tar.gz` should produce `8bf1985008dea8f79da1d9668b065543`
-* `md5sum small-validation.tar.gz` should produce `d7e8670238a54f13b8b729823a988004`
-* `md5sum small-test.tar.gz` should produce `6da0ca3d5cb3c137cf7eebe93412c86f`
+	category {
+	  "id" : int,
+	  # Species name
+	  "name" : str,
+	  # We also provide the super-categories for each species.
+	  "family": str,
+	  "genus": str
+	}
 
-## Overlap with iNaturalist 2018
-For those who may be interested in pre-training using the iNaturalist 2018 dataset: out of the 683 species, only 2 species also exist in the iNaturalist 2018 dataset:
+	region {
+	  "id": int
+	  "name": str
+	}
 
-`Clidemia hirta` (iNat2018 category 7412) maps to 3 Herbarium subspecies
+	license {
+	  "id": 1,
+	  "name": str,
+	  "url": str
+	}
 
-* `Clidemia hirta var. elegans (Aubl.) Griseb.` (Herbarium category 182)
-* `Clidemia hirta var. tiliaefolia (DC.) J.F.Macbr.` (Herbarium category 302)
-* `Clidemia hirta (L.) D.Don` (Herbarium category 515)
+The training set images are organized in subfolders `train/<subfolder1>/<subfolder2>/<image id>.jpg`.
 
-`Rhexia virginica` (iNat2018 category 7413) maps to 1 Herbarium species
-
-* `Rhexia virginica L.`, Herbarium category 629
-
-Note that herbarium specimens generally look very different from images in the wild.
+The test set images are organized in subfolders `test/<subfolder>/<image id>.jpg`.
 
 ## Guidelines
 The general rule is that participants should only use the provided training and validation images for training models to classify the test images. We do not want participants crawling the web in search of additional data or using previous versions of this dataset. Pretrained models may be used to construct the algorithms from publicly available academic datasets (e.g. ImageNet, iNaturalist 2017-2018). Please specify any and all external data and/or models used for training when uploading results.
@@ -113,7 +133,7 @@ The general rule is that participants should only use the provided training and 
 Participants are allowed to collect additional annotations on the provided training sets. Participants are not allowed to collect annotations on the test set. Teams should specify that they collected additional annotations when submitting results.
 
 ## About
-This is an FGVCx competition hosted as part of the [FGVC6](https://sites.google.com/corp/view/fgvc6/home) workshop at CVPR 2019 and supported by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) and [dataCommons](http://www.datacommons.org/).
+This is an FGVCx competition hosted as part of the [FGVC7](https://sites.google.com/corp/view/fgvc7/home) workshop at CVPR 2020 and supported by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/).
 
 ### Acknowledgements
 Data is provided by Barbara Ambrose and Melissa Tulig (New York Botanical Garden).

@@ -49,6 +49,13 @@ In "macro" F1 a separate F1 score is calculated for each `species` value and the
 
 ### Submission File Format
 
+For each image `Id`, you should predict the image label in the `Predicted` column. The submission file should have the following format:
+
+    Id,Predicted
+    0,0
+    1,27
+    2,42
+    ...
 
 ## Data
 ### Terms of Use

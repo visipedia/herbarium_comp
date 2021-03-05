@@ -9,7 +9,7 @@ The Herbarium 2020 dataset contains over 1M images representing over 32,000 plan
 	<img src="./assets/specimen2.jpg" width=150>
 	<img src="./assets/specimen3.jpg" width=150>
 	<img src="./assets/specimen4.jpg" width=150>
-	<img src="./2020/assets/specimen5.jpg" width=150>
+	<img src="./assets/specimen5.jpg" width=150>
 </p>
 
 ## Background

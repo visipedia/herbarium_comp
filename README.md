@@ -1,4 +1,4 @@
-![Banner](./2021/assets/HerbariumChallengeBanner.jpg)
+![Banner](./2021/assets/HerbariumChallengeBanner.png)
 
 
 # The Herbarium 2021: Half-Earth Challenge - FGVC8

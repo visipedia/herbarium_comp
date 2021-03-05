@@ -1,36 +1,45 @@
-# Herbarium Challenge 2020 - FGVC7
+# The Herbarium 2021: Half-Earth Challenge - FGVC8
 
-The Herbarium 2020 FGVC7 Challenge is to identify vascular plant species from a large, long-tailed collection herbarium specimens provided by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/) (NYBG).
+The Herbarium 2021: Half-Earth Challenge is to identify vascular plant specimens provided by the New York Botanical Garden (NY), Bishop Museum (BPBM), Naturalis Biodiversity Center (NL), Queensland Herbarium (BRI), and Auckland War Memorial Museum (AK). 
 
-The Herbarium 2020 dataset contains over 1M images representing over 32,000 plant species. This is a dataset with a long tail; there are a minimum of 3 specimens per species, however, some species are represented by more than a hundred specimens. This dataset only contains vascular land plants which includes lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide all of our crops, vegetables, and fruits.
+The Herbarium 2021: Half-Earth Challenge data set includes more than 2.5M images representing nearly 66,000 species from the Americas and Oceania that have been aligned to a standardized plant list ([LCVP v1.0.2](https://www.nature.com/articles/s41597-020-00702-z)). The Americas include North America and South America while Oceania includes Hawaii, Northern Mariana Islands, Australia, Papua New Guinea, New Caledonia, New Zealand, Solomon Islands, Fiji, Vanuatu, and French Polynesia. 
 
-<p float="left">
-	<img src="./2020/assets/specimen1.jpg" width=150>
-	<img src="./2020/assets/specimen2.jpg" width=150>
-	<img src="./2020/assets/specimen3.jpg" width=150>
-	<img src="./2020/assets/specimen4.jpg" width=150>
-	<img src="./2020/assets/specimen5.jpg" width=150>
-</p>
+This dataset has a long tail; there is a minimum of 3 images per species. However, some species can be represented by more than 100 images. This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide all of our crops, vegetables, and fruits.
 
-## Background
-The New York Botanical Garden (NYBG) herbarium contains more than 7.8 million plant and fungal specimens. Herbaria are a massive repository of plant diversity data.  These collections not only represent a vast amount of plant diversity, but since herbarium collections include specimens dating back hundreds of years, they provide snapshots of plant diversity through time.  The integrity of the plant is maintained in herbaria as a pressed, dried specimen; a specimen collected nearly two hundred years ago by Darwin looks much the same as one collected a month ago by an NYBG botanist.  All specimens not only maintain their morphological features but also include collection dates and locations, and the name of the person who collected the specimen.  This information, multiplied by millions of plant collections, provides the framework for understanding plant diversity on a massive scale and learning how it has changed over time.
+The teams with the most accurate models will be contacted with the intention of using them on the unnamed plant collections in the NYBG herbarium and then be assessed by the NYBG plant specialists for accuracy.
 
-The teams with the most accurate models will be contacted, with the intention of using them on the un-named plant collections in the NYBG herbarium collection, and assessed by the NYBG plant specialists.
+[![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
-## About
-This is an FGVC competition hosted as part of the [FGVC7](https://sites.google.com/corp/view/fgvc7/home) workshop at CVPR 2020 and sponsored by [NYBG](https://www.nybg.org/plant-research-and-conservation/).
+# Background
 
+There are approximately 3,000 herbaria world-wide, and they are massive repositories of plant diversity data. These collections not only represent a vast amount of plant diversity, but since herbarium collections include specimens dating back hundreds of years, they provide snapshots of plant diversity through time. The integrity of the plant is maintained in herbaria as a pressed, dried specimen; a specimen collected nearly two hundred years ago by Darwin looks much the same as one collected a month ago by an NYBG botanist. All specimens not only maintain their morphological features but also include collection dates and locations, their reproductive state, and the name of the person who collected the specimen. This information, multiplied by millions of plant collections, provides the framework for understanding plant diversity on a massive scale and learning how it has changed over time. The models developed during this competition are an integral first step to speed the pace of species discovery and save the plants of the world.
+
+There are approximately 400,000 known vascular plant species with an estimated 80,000 still to be discovered. Herbaria contain an overwhelming amount of unnamed and new specimens, and with the threats of climate change, we need new tools to quicken the pace of species discovery. This is more pressing today as a United Nations report indicates that more than one million species are at risk of extinction, and amid this dire prediction is a recent estimate that suggests plants are disappearing more quickly than animals. This year, we have expanded our curated herbarium dataset to vascular plant diversity in the Americas and Oceania. 
+
+The most accurate models will be used on the unidentified plant specimens in our herbarium and assessed by our taxonomists thereby producing a tool to quicken the pace of species discovery.
+
+# About
+
+This is an FGVC competition hosted as part of the [FGVC8](https://sites.google.com/view/fgvc8) workshop at [CVPR 2021](http://cvpr2021.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
+
+Details of this competition are mirrored on the [github](https://github.com/visipedia/herbarium_comp) page. Please post in the forum or open an issue if you have any questions or problems with the dataset.
+
+# Acknowledgements
+
+The images are provided by the New York Botanical Garden, Bishop Museum, Naturalis Biodiversity Center, Queensland Herbarium, and Auckland War Memorial Museum.
+
+[![Logos.png](https://i.postimg.cc/fbSLBX54/Logos.png)](https://postimg.cc/xkYndXWg)
 
 ## Kaggle
-The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.com/c/herbarium-2020-fgvc7)).
+The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.com/c/herbarium-2021-fgvc8)).
 
 ## Dates
 |||
 |------|---------------|
-Competition Starts|March 9, 2020|
-Entry Deadline|May 4, 2020|
-Team Merger Deadline|May 4, 2020|
-Final Submission Deadline|May 11, 2020|
+Competition Starts|March 8, 2021|
+Entry Deadline|May 24, 2021|
+Team Merger Deadline|May 24, 2021|
+Final Submission Deadline|May 31, 2021|
 
 ## Evaluation
 Competition submissions are evaluated using the [macro F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
@@ -63,84 +72,77 @@ For each image `Id`, you should predict the image label in the `Predicted` colum
 * You will NOT distribute the images.
 
 ### Dataset Details
-The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2020-fgvc7/data).
+The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2021-fgvc8/data).
 
-The training and test set contain images of herbarium specimens, from over 32,000 species of vascular plants. Each image contains exactly one specimen. The text and barcode labels on the specimen images have been blurred to remove category information in the image.
+# Data Overview
+The training and test set contain images of herbarium specimens from close to 66,000 species of vascular plants. Each image contains exactly one specimen. The text labels on the specimen images have been blurred to remove category information in the image.
 
 The data has been approximately split 80%/20% for training/test. Each category has at least 1 instance in both the training and test datasets. Note that the test set distribution is slightly different from the training set distribution. The training set contains species with hundreds of examples, but the test set has the number of examples per species capped at a maximum of 10.
 
+# Dataset Details
 Each image has different image dimensions, with a maximum of 1000 pixels in the larger dimension. These have been resized from the original image resolution. All images are in JPEG format.
 
-### Dataset Format
-This dataset uses the [COCO dataset format](http://cocodataset.org/#format-data) with additional annotation fields. In addition to the species category labels, we also provide region and supercategory information.
+# Dataset Format
+This dataset uses the [COCO dataset format](https://cocodataset.org/#format-data) with additional annotation fields. In addition to the species category labels, we also provide region and supercategory information.
 
-The training set metadata (`train/metadata.json`) and test set metadata (`test/metadata.json`) are JSON files in the format below. Naturally, the test set metadata file omits the "annotations", "categories" and "regions" elements.
+The training set metadata (`train/metadata.json`) and test set metadata (`test/metadata.json`) are JSON files in the format below. Naturally, the test set metadata file omits the "annotations", "categories," and "regions" elements.
 
-	{
-	  "annotations" : [annotation],
-	  "categories" : [category],
-	  "images" : [image],
-	  "info" : info,
-	  "licenses": [license],
-	  "regions": [region]
-	}
+    { 
+      "annotations" : [annotation], 
+      "categories" : [category],
+      "images" : [image],
+      "info" : info,
+      "licenses": [license],
+      "institutions": [region]
+    }
+    
+    info {
+      "year" : int,
+      "version" : str,
+      "url": str,
+      "description" : str,
+      "contributor" : str,
+      "date_created" : datetime
+    }
 
-	info {
-	  "year" : int,
-	  "version" : str,
-	  "url": str,
-	  "description" : str,
-	  "contributor" : str,
-	  "date_created" : datetime
-	}
+    image {
+      "id" : int,
+      "width" : int,
+      "height" : int,
+      "file_name" : str,
+      "license" : int
+    }
 
-	image {
-	  "id" : int,
-	  "width" : int,
-	  "height" : int,
-	  "file_name" : str,
-	  "license" : int
-	}
+    annotation {
+      "id": int,
+      "image_id": int,
+      "category_id": int,
+      # Region where this specimen was collected.
+      "region_id": int
+    }
 
-	annotation {
-	  "id": int,
-	  "image_id": int,
-	  "category_id": int,
-	  # Region where this specimen was collected.
-	  "region_id": int
-	}
+    category {
+      "id" : int,
+      # Species name
+      "name" : str,
+      # We also provide the super-categories for each species.
+      "family": str,
+      "order": str
+    }
 
-	category {
-	  "id" : int,
-	  # Species name
-	  "name" : str,
-	  # We also provide the super-categories for each species.
-	  "family": str,
-	  "genus": str
-	}
+    institution {
+      "id": int
+      "name": str
+    }
 
-	region {
-	  "id": int
-	  "name": str
-	}
+    license {
+      "id": 1,
+      "name": str,
+      "url": str
+    }
 
-	license {
-	  "id": 1,
-	  "name": str,
-	  "url": str
-	}
 
 The training set images are organized in subfolders `train/<subfolder1>/<subfolder2>/<image id>.jpg`.
 
 The test set images are organized in subfolders `test/<subfolder>/<image id>.jpg`.
 
-## Guidelines
-The general rule is that participants should only use the provided training and validation images for training models to classify the test images. We do not want participants crawling the web in search of additional data or using previous versions of this dataset. Pretrained models may be used to construct the algorithms from publicly available academic datasets (e.g. ImageNet, iNaturalist 2017-2018). Please specify any and all external data and/or models used for training when uploading results.
-
-Participants are allowed to collect additional annotations on the provided training sets. Participants are not allowed to collect annotations on the test set. Teams should specify that they collected additional annotations when submitting results.
-
-## About
-This is an FGVCx competition hosted as part of the [FGVC7](https://sites.google.com/corp/view/fgvc7/home) workshop at CVPR 2020 and supported by the [New York Botanical Garden](https://www.nybg.org/plant-research-and-conservation/).
-
-### Acknowledgements
-Data is provided by Barbara Ambrose and Melissa Tulig (New York Botanical Garden).

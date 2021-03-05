@@ -5,10 +5,10 @@ The Herbarium 2020 FGVC7 Challenge is to identify vascular plant species from a 
 The Herbarium 2020 dataset contains over 1M images representing over 32,000 plant species. This is a dataset with a long tail; there are a minimum of 3 specimens per species, however, some species are represented by more than a hundred specimens. This dataset only contains vascular land plants which includes lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide all of our crops, vegetables, and fruits.
 
 <p float="left">
-	<img src="./2020/assets/specimen1.jpg" width=150>
-	<img src="./2020/assets/specimen2.jpg" width=150>
-	<img src="./2020/assets/specimen3.jpg" width=150>
-	<img src="./2020/assets/specimen4.jpg" width=150>
+	<img src="./assets/specimen1.jpg" width=150>
+	<img src="./assets/specimen2.jpg" width=150>
+	<img src="./assets/specimen3.jpg" width=150>
+	<img src="./assets/specimen4.jpg" width=150>
 	<img src="./2020/assets/specimen5.jpg" width=150>
 </p>
 

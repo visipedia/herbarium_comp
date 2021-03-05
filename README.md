@@ -1,3 +1,6 @@
+![Banner](./2021/assets/HerbariumChallengeBanner.png)
+
+
 # The Herbarium 2021: Half-Earth Challenge - FGVC8
 
 _The Herbarium 2021: Half-Earth Challenge_ is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY), [Bishop Museum](https://www.bishopmuseum.org/) (BPBM), [Naturalis Biodiversity Center](https://www.naturalis.nl/en) (NL), [Queensland Herbarium](https://www.qld.gov.au/environment/plants-animals/plants/herbarium) (BRI), and [Auckland War Memorial Museum](https://www.aucklandmuseum.com/) (AK).

@@ -1,6 +1,6 @@
 # The Herbarium 2021: Half-Earth Challenge - FGVC8
 
-The Herbarium 2021: Half-Earth Challenge is to identify vascular plant specimens provided by the New York Botanical Garden (NY), Bishop Museum (BPBM), Naturalis Biodiversity Center (NL), Queensland Herbarium (BRI), and Auckland War Memorial Museum (AK). 
+The Herbarium 2021: Half-Earth Challenge is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY), [Bishop Museum](https://www.bishopmuseum.org/) (BPBM), [Naturalis Biodiversity Center](https://www.naturalis.nl/en) (NL), [Queensland Herbarium](https://www.qld.gov.au/environment/plants-animals/plants/herbarium) (BRI), and [Auckland War Memorial Museum](https://www.aucklandmuseum.com/) (AK).
 
 The Herbarium 2021: Half-Earth Challenge data set includes more than 2.5M images representing nearly 66,000 species from the Americas and Oceania that have been aligned to a standardized plant list ([LCVP v1.0.2](https://www.nature.com/articles/s41597-020-00702-z)). The Americas include North America and South America while Oceania includes Hawaii, Northern Mariana Islands, Australia, Papua New Guinea, New Caledonia, New Zealand, Solomon Islands, Fiji, Vanuatu, and French Polynesia. 
 
@@ -10,7 +10,7 @@ The teams with the most accurate models will be contacted with the intention of 
 
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
-# Background
+## Background
 
 There are approximately 3,000 herbaria world-wide, and they are massive repositories of plant diversity data. These collections not only represent a vast amount of plant diversity, but since herbarium collections include specimens dating back hundreds of years, they provide snapshots of plant diversity through time. The integrity of the plant is maintained in herbaria as a pressed, dried specimen; a specimen collected nearly two hundred years ago by Darwin looks much the same as one collected a month ago by an NYBG botanist. All specimens not only maintain their morphological features but also include collection dates and locations, their reproductive state, and the name of the person who collected the specimen. This information, multiplied by millions of plant collections, provides the framework for understanding plant diversity on a massive scale and learning how it has changed over time. The models developed during this competition are an integral first step to speed the pace of species discovery and save the plants of the world.
 
@@ -18,22 +18,11 @@ There are approximately 400,000 known vascular plant species with an estimated 8
 
 The most accurate models will be used on the unidentified plant specimens in our herbarium and assessed by our taxonomists thereby producing a tool to quicken the pace of species discovery.
 
-# About
+## Kaggle Competition
 
-This is an FGVC competition hosted as part of the [FGVC8](https://sites.google.com/view/fgvc8) workshop at [CVPR 2021](http://cvpr2021.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
-
-Details of this competition are mirrored on the [github](https://github.com/visipedia/herbarium_comp) page. Please post in the forum or open an issue if you have any questions or problems with the dataset.
-
-# Acknowledgements
-
-The images are provided by the New York Botanical Garden, Bishop Museum, Naturalis Biodiversity Center, Queensland Herbarium, and Auckland War Memorial Museum.
-
-[![Logos.png](https://i.postimg.cc/fbSLBX54/Logos.png)](https://postimg.cc/xkYndXWg)
-
-## Kaggle
 The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.com/c/herbarium-2021-fgvc8)).
 
-## Dates
+### Dates
 |||
 |------|---------------|
 Competition Starts|March 8, 2021|
@@ -41,7 +30,7 @@ Entry Deadline|May 24, 2021|
 Team Merger Deadline|May 24, 2021|
 Final Submission Deadline|May 31, 2021|
 
-## Evaluation
+### Evaluation
 Competition submissions are evaluated using the [macro F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
 
 F1 is calculated as follows:
@@ -66,23 +55,18 @@ For each image `Id`, you should predict the image label in the `Predicted` colum
     2,42
     ...
 
-## Data
-### Terms of Use
-* You will use the data only for non-commercial research and educational purposes.
-* You will NOT distribute the images.
+## Data 
 
-### Dataset Details
 The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2021-fgvc8/data).
 
-# Data Overview
 The training and test set contain images of herbarium specimens from close to 66,000 species of vascular plants. Each image contains exactly one specimen. The text labels on the specimen images have been blurred to remove category information in the image.
 
 The data has been approximately split 80%/20% for training/test. Each category has at least 1 instance in both the training and test datasets. Note that the test set distribution is slightly different from the training set distribution. The training set contains species with hundreds of examples, but the test set has the number of examples per species capped at a maximum of 10.
 
-# Dataset Details
+## Dataset Details
 Each image has different image dimensions, with a maximum of 1000 pixels in the larger dimension. These have been resized from the original image resolution. All images are in JPEG format.
 
-# Dataset Format
+## Dataset Format
 This dataset uses the [COCO dataset format](https://cocodataset.org/#format-data) with additional annotation fields. In addition to the species category labels, we also provide region and supercategory information.
 
 The training set metadata (`train/metadata.json`) and test set metadata (`test/metadata.json`) are JSON files in the format below. Naturally, the test set metadata file omits the "annotations", "categories," and "regions" elements.
@@ -143,6 +127,21 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
 
 
 The training set images are organized in subfolders `train/<subfolder1>/<subfolder2>/<image id>.jpg`.
-
 The test set images are organized in subfolders `test/<subfolder>/<image id>.jpg`.
+
+### Terms of Use
+* You will use the data only for non-commercial research and educational purposes.
+* You will NOT distribute the images.
+
+## About
+
+This is an FGVC competition hosted as part of the [FGVC8](https://sites.google.com/view/fgvc8) workshop at [CVPR 2021](http://cvpr2021.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
+
+Please post in the Kaggle forum or open an issue if you have any questions or problems with the dataset.
+
+## Acknowledgements
+
+The images are provided by the [New York Botanical Garden](https://www.nybg.org/), [Bishop Museum](https://www.bishopmuseum.org/), [Naturalis Biodiversity Center](https://www.naturalis.nl/en), [Queensland Herbarium](https://www.qld.gov.au/environment/plants-animals/plants/herbarium), and [Auckland War Memorial Museum](https://www.aucklandmuseum.com/).
+
+[![Logos.png](https://i.postimg.cc/fbSLBX54/Logos.png)](https://postimg.cc/xkYndXWg)
 

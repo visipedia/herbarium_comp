@@ -5,9 +5,9 @@
 
 _The Herbarium 2021: Half-Earth Challenge_ is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY), [Bishop Museum](https://www.bishopmuseum.org/) (BPBM), [Naturalis Biodiversity Center](https://www.naturalis.nl/en) (NL), [Queensland Herbarium](https://www.qld.gov.au/environment/plants-animals/plants/herbarium) (BRI), and [Auckland War Memorial Museum](https://www.aucklandmuseum.com/) (AK).
 
-_The Herbarium 2021: Half-Earth Challenge_ dataset includes more than **2.5M images** representing nearly **66,000 species** from the Americas and Oceania that have been aligned to a standardized plant list ([LCVP v1.0.2](https://www.nature.com/articles/s41597-020-00702-z)). The Americas include North America and South America while Oceania includes Hawaii, Northern Mariana Islands, Australia, Papua New Guinea, New Caledonia, New Zealand, Solomon Islands, Fiji, Vanuatu, and French Polynesia. 
+_The Herbarium 2021: Half-Earth Challenge_ dataset includes more than **2.5M images** representing nearly **66,000 species** from the Americas and Oceania that have been aligned to a standardized plant list ([LCVP v1.0.2](https://www.nature.com/articles/s41597-020-00702-z)). 
 
-This dataset has a long tail; there is a minimum of 3 images per species. However, some species can be represented by more than 100 images. This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide all of our crops, vegetables, and fruits.
+This dataset has a long tail; there are a minimum of 3 images per species. However, some species can be represented by more than 100 images. This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
 
 The teams with the most accurate models will be contacted with the intention of using them on the unnamed plant collections in the NYBG herbarium and then be assessed by the NYBG plant specialists for accuracy.
 
@@ -79,7 +79,7 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
       "images" : [image],
       "info" : info,
       "licenses": [license],
-      "institutions": [region]
+      "institutions": [institution]
     }
     
     info {
@@ -103,8 +103,8 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
       "id": int,
       "image_id": int,
       "category_id": int,
-      # Region where this specimen was collected.
-      "region_id": int
+      # Institution that provided this specimen.
+      "institution_id": int
     }
 
     category {
@@ -122,7 +122,7 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
     }
 
     license {
-      "id": 1,
+      "id": int,
       "name": str,
       "url": str
     }

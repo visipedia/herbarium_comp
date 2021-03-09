@@ -129,6 +129,7 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
 
 
 The training set images are organized in subfolders `train/<subfolder1>/<subfolder2>/<image id>.jpg`.
+
 The test set images are organized in subfolders `test/<subfolder>/<image id>.jpg`.
 
 ### Terms of Use

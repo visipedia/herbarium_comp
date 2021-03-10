@@ -62,7 +62,7 @@ For each image `Id`, you should predict the image label in the `Predicted` colum
 
 The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2021-fgvc8/data).
 
-The training and test set contain images of herbarium specimens from close to 66,000 species of vascular plants. Each image contains exactly one specimen. The text labels on the specimen images have been blurred to remove category information in the image.
+The training and test set contain images of herbarium specimens from close to 65,000 species of vascular plants. Each image contains exactly one specimen. The text labels on the specimen images have been blurred to remove category information in the image.
 
 The data has been approximately split 80%/20% for training/test. Each category has at least 1 instance in both the training and test datasets. Note that the test set distribution is slightly different from the training set distribution. The training set contains species with hundreds of examples, but the test set has the number of examples per species capped at a maximum of 10.
 

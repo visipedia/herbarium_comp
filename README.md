@@ -128,9 +128,10 @@ The training set metadata (`train/metadata.json`) and test set metadata (`test/m
     }
 
 
-The training set images are organized in subfolders `train/<subfolder1>/<subfolder2>/<image id>.jpg`.
+The training set images are organized in subfolders `train/images/<subfolder1>/<subfolder2>/<image id>.jpg`, where `<subfolder1>` combined with `<subfolder2>` corresponds to the `category_id`. For example, a training image with an `image_id` of `1104517` and a `category_id` of `00001`, can be found at `train/images/000/01/1104517.jpg`. 
 
-The test set images are organized in subfolders `test/<subfolder>/<image id>.jpg`.
+
+The test set images are organized in subfolders `test/images/<subfolder>/<image id>.jpg`, where `<subfolder>` corresponds to the integer division of the `image_id` by 1000. For example, a test image with and `image_id` of `8005`, can be found at `test/images/008/8005.jpg`. 
 
 ### Terms of Use
 * You will use the data only for non-commercial research and educational purposes.

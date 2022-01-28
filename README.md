@@ -1,25 +1,35 @@
 ![Banner](./2021/assets/HerbariumChallengeBanner.png)
 
 
-# The Herbarium 2021: Half-Earth Challenge - FGVC8
+# Description 
 
-_The Herbarium 2021: Half-Earth Challenge_ is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY), [Bishop Museum](https://www.bishopmuseum.org/) (BPBM), [Naturalis Biodiversity Center](https://www.naturalis.nl/en) (NL), [Queensland Herbarium](https://www.qld.gov.au/environment/plants-animals/plants/herbarium) (BRI), and [Auckland War Memorial Museum](https://www.aucklandmuseum.com/) (AK).
+## *The Herbarium 2022: Flora of North America* is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY) and multiple other institutions. 
 
-_The Herbarium 2021: Half-Earth Challenge_ dataset includes more than **2.5M images** representing nearly **65,000 species** from the Americas and Oceania that have been aligned to a standardized plant list ([LCVP v1.0.2](https://www.nature.com/articles/s41597-020-00702-z)). 
+*The Herbarium 2022: Flora of North America*  dataset includes more than **1.05 M images** representing nearly **15,500 taxa** from the North America that have been aligned to a standardized plant list ([World Checklist of Vascular Plants; WCVP] (https://wcvp.science.kew.org/))
 
-This dataset has a long tail; there are a minimum of 3 images per species. However, some species can be represented by more than 100 images. This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
-
-The teams with the most accurate models will be contacted with the intention of using them on the unnamed plant collections in the NYBG herbarium and then be assessed by the NYBG plant specialists for accuracy.
+This dataset has a long tail; there are a minimum of 7 images per taxon. A maximum number of images per taxon is set to 100 images, to ensure a reasonable size for training and testing.This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
 
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
-## Background
+# Background
 
 There are approximately 3,000 herbaria world-wide, and they are massive repositories of plant diversity data. These collections not only represent a vast amount of plant diversity, but since herbarium collections include specimens dating back hundreds of years, they provide snapshots of plant diversity through time. The integrity of the plant is maintained in herbaria as a pressed, dried specimen; a specimen collected nearly two hundred years ago by Darwin looks much the same as one collected a month ago by an NYBG botanist. All specimens not only maintain their morphological features but also include collection dates and locations, their reproductive state, and the name of the person who collected the specimen. This information, multiplied by millions of plant collections, provides the framework for understanding plant diversity on a massive scale and learning how it has changed over time. The models developed during this competition are an integral first step to speed the pace of species discovery and save the plants of the world.
 
-There are approximately 400,000 known vascular plant species with an estimated 80,000 still to be discovered. Herbaria contain an overwhelming amount of unnamed and new specimens, and with the threats of climate change, we need new tools to quicken the pace of species discovery. This is more pressing today as a United Nations report indicates that more than one million species are at risk of extinction, and amid this dire prediction is a recent estimate that suggests plants are disappearing more quickly than animals. This year, we have expanded our curated herbarium dataset to vascular plant diversity in the Americas and Oceania. 
+There are approximately 400,000 known vascular plant taxa with an estimated 80,000 still to be discovered. Herbaria contain an overwhelming amount of unnamed and new specimens, and with the threats of climate change, we need new tools to quicken the pace of species discovery. This is more pressing today as a United Nations report indicates that more than one million species are at risk of extinction, and amid this dire prediction is a recent estimate that suggests plants are disappearing more quickly than animals. This year, we have expanded our curated herbarium dataset to vascular plant diversity in the Americas and Oceania. 
 
 The most accurate models will be used on the unidentified plant specimens in our herbarium and assessed by our taxonomists thereby producing a tool to quicken the pace of species discovery.
+
+# About
+
+This is an FGVC competition hosted as part of the [FGVC9](https://sites.google.com/view/fgvc9/home) workshop at [CVPR 2022](https://cvpr2022.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
+
+Details of this competition are mirrored on the [github](https://github.com/visipedia/herbarium_comp) page. Please post in the forum or open an issue if you have any questions or problems with the dataset.
+
+# Acknowledgements
+
+The images are provided by the [New York Botanical Garden](https://www.nybg.org/) and 59 more herbaria from North America and around the world.  
+
+[![Logos.png](https://i.postimg.cc/fbSLBX54/Logos.png)](https://postimg.cc/xkYndXWg)
 
 ## Kaggle Competition
 

@@ -3,7 +3,7 @@
 
 # Description 
 
-*The Herbarium 2022: Flora of North America* is a part of a project of the [New York Botanical Garden](https://www.nybg.org/) funded by the National Science Fundation to building tools to identify novel vascular plant species around the world. *The Herbarium 2022: Flora of North America* attempts to identify all vascular plant speciments from the entire North America, provided by 50 different institutions around the world. 
+*The Herbarium 2022: Flora of North America* is a part of a project of the [New York Botanical Garden](https://www.nybg.org/) funded by the National Science Fundation to building tools to identify novel plant species around the world. *The Herbarium 2022: Flora of North America* attempts to identify all vascular plant speciments from the entire North America, provided by 50 different institutions around the world. 
 
 *The Herbarium 2022: Flora of North America*  dataset includes more than **1.05 M images** representing more than **15.5K (90%)** of vascular land plants in the North America. Taxa names from our plant list is aligned to a standardized plant list, [The World Checklist of Vascular Plants (WCVP)](https://wcvp.science.kew.org/) from the [Royal Botanical Garden](https://www.kew.org/). Our dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)

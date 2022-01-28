@@ -9,7 +9,7 @@
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
 
-Our dataset is long-tail distributed. Minimum number of images per taxon is as less as couple images, and maximum number can go up to few thousand images. We curated images per taxon to minimum of 7 images and maxiumum of 100 images, in the attempts to ensure sufficient but managable training data size for competition participants. 
+Our dataset is long-tail distributed. Minimum number of images per taxon is as less as couple images, and maximum number can go up to several thousand images. We curated images per taxon to minimum of 7 images and maxiumum of 100 images, in the attempts to ensure sufficient but managable training data size for competition participants. 
 
 
 # Background

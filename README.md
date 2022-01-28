@@ -39,9 +39,9 @@ The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.c
 ### Dates
 |||
 |------|---------------|
-Competition Starts|Feb 21 , 2021|
-Entry Deadline|April 4, 2021|
-Team Merger Deadline|May 19, 2021|
+Competition Starts|Feb 21 , 2022|
+Entry Deadline|April 4, 2022|
+Team Merger Deadline|May 19, 2022|
 Final Submission Deadline|May 31, 2022|
 
 ### Evaluation

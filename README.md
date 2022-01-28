@@ -5,10 +5,10 @@
 
 *The Herbarium 2022: Flora of North America* is a part of a project of [New York Botanical Garden](https://www.nybg.org/) funded by the National Science Fundation to building tools to identify novel vascular plant species around the world. *The Herbarium 2022: Flora of North America* attempts to identify all vascular plant speciments from the entire North America, provided by 50 different institutions around the world. 
 
-*The Herbarium 2022: Flora of North America*  dataset includes more than **1.05 M images** representing more than 90% of vascular land plants in the North America. Taxa names from our plant list is aligned to a standardized plant list [World Checklist of Vascular Plants; WCVP](https://wcvp.science.kew.org/) from the [Royal Botanical Garden](https://www.kew.org/).
+*The Herbarium 2022: Flora of North America*  dataset includes more than **1.05 M images** representing more than 90% of vascular land plants in the North America. Taxa names from our plant list is aligned to a standardized plant list [World Checklist of Vascular Plants; WCVP](https://wcvp.science.kew.org/) from the [Royal Botanical Garden](https://www.kew.org/). This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
 
-This dataset has a long tail; there are a minimum of 7 images per taxon. A maximum number of images per taxon is set to 100 images, to ensure a reasonable size for training and testing.This dataset only includes vascular land plants which include lycophytes, ferns, gymnosperms, and flowering plants. The extinct forms of lycophytes are the major component of coal deposits, ferns are indicators of ecosystem health, gymnosperms provide major habitats for animals, and flowering plants provide almost all of our crops, vegetables, and fruits.
 
+Our dataset is long-tail distributed. Minimum number of images per taxon is as less as couple images, and maximum number can go up to few thousand images. We curated images per taxon to minimum of 7 images and maxiumum of 100 images, in the attempts to ensure sufficient but managable training data size for competition participants. 
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
 # Background

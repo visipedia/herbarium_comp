@@ -39,10 +39,10 @@ The leaderboard is being hosted on Kaggle ([challenge page](https://www.kaggle.c
 ### Dates
 |||
 |------|---------------|
-Competition Starts|March 8, 2021|
-Entry Deadline|May 24, 2021|
-Team Merger Deadline|May 24, 2021|
-Final Submission Deadline|May 31, 2021|
+Competition Starts|Feb 21 , 2021|
+Entry Deadline|April 4, 2021|
+Team Merger Deadline|May 19, 2021|
+Final Submission Deadline|May 31, 2022|
 
 ### Evaluation
 Competition submissions are evaluated using the [macro F1 score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html).
@@ -71,7 +71,7 @@ For each image `Id`, you should predict the image label in the `Predicted` colum
 
 ## Data 
 
-The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2021-fgvc8/data).
+The dataset is hosted on [Kaggle](https://www.kaggle.com/c/herbarium-2021-fgvc9/data).
 
 The training and test set contain images of herbarium specimens from close to 65,000 species of vascular plants. Each image contains exactly one specimen. The text labels on the specimen images have been blurred to remove category information in the image.
 
@@ -150,7 +150,7 @@ The test set images are organized in subfolders `test/images/<subfolder>/<image 
 
 ## About
 
-This is an FGVC competition hosted as part of the [FGVC8](https://sites.google.com/view/fgvc8) workshop at [CVPR 2021](http://cvpr2021.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
+This is an FGVC competition hosted as part of the [FGVC9](https://sites.google.com/view/fgvc9) workshop at [CVPR 2022](http://cvpr2022.thecvf.com/) and sponsored by [NYBG](https://www.nybg.org/).
 
 Please post in the Kaggle forum or open an issue if you have any questions or problems with the dataset.
 

@@ -3,7 +3,7 @@
 
 # Description 
 
-## *The Herbarium 2022: Flora of North America* is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY) and multiple other institutions. 
+## *The Herbarium 2022: Flora of North America* is to identify vascular plant specimens provided by the [New York Botanical Garden](https://www.nybg.org/) (NY) and 50 different other institutions around the world. 
 
 *The Herbarium 2022: Flora of North America*  dataset includes more than **1.05 M images** representing more than 90% of vascular land plants in the North America. Taxa names from our plant list is aligned to a standardized plant list [World Checklist of Vascular Plants; WCVP](https://wcvp.science.kew.org/) from the [Royal Botanical Garden](https://www.kew.org/).
 

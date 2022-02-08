@@ -2,6 +2,7 @@
 
 
 # Description 
+
 [![Herbarium2021.png](https://i.postimg.cc/htpxH99f/Herbarium2021.png)](https://postimg.cc/BjPXFP70)
 
 *The Herbarium 2022: Flora of North America* is a part of a project of the [New York Botanical Garden](https://www.nybg.org/) funded by the [National Science Foundation](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2054684&HistoricalAwards=false) to build tools to identify novel plant species around the world. The dataset strives to represent all known vascular plant taxa in North America, using images gathered from 60 different botanical institutions around the world. <br>

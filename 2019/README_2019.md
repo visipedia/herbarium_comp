@@ -39,7 +39,7 @@ Final Submission Deadline|June 7, 2019|
 ## Data Split
 The training, validation and test set contain images of herbarium specimens, from 683 species of the flowering plant family Melastomataceae.
 
-The data has been split 75%/5%/20% for training/validation/test. Each category has at least 15 instances in the training and validation datasets, and some categories have much more. Datasets are hosted on Google Cloud Platform.
+The data has been split 75%/5%/20% for training/validation/test. Each category has at least 15 instances in the training and validation datasets, and some categories have much more. Datasets are hosted on [Kaggle Datasets (`google/herbarium-2019-fgvc6`)](https://www.kaggle.com/datasets/google/herbarium-2019-fgvc6).
 
 ## Evaluation
 The goal in this competition is to identify the category of a herbarium specimen image. The metric used in this competition is the mean top-1 classification error.
@@ -64,14 +64,28 @@ The first category will be used to compute the metric. There should be exactly o
 * You will use the data only for non-commercial research and educational purposes.
 * You will NOT distribute the images.
 
+### Download from Kaggle Datasets
+Both the full-resolution and small resized datasets (along with `categories.txt`) are hosted on [Kaggle Datasets (`google/herbarium-2019-fgvc6`)](https://www.kaggle.com/datasets/google/herbarium-2019-fgvc6):
+
+```bash
+kaggle datasets download -d google/herbarium-2019-fgvc6
+```
+
+Or in Python via `kagglehub`:
+
+```python
+import kagglehub
+path = kagglehub.dataset_download("google/herbarium-2019-fgvc6")
+```
+
 ### Full Dataset
 For the full dataset, each image has been provided as a high-resolution image, and has not been resized in any way. All images are in JPEG format.
 
-The training set ([train.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/train.tar.gz), 38 GB) contains 34,225 images, organized as subfolders `train/<category>/<id>.jpg`. Note that the image IDs are not unique across categories, e.g. `train/1/00000.jpg` and `train/2/00000.jpg` are both within the training set.
+The training set (`train/` / `train.tar.gz`, 38 GB) contains 34,225 images, organized as subfolders `train/<category>/<id>.jpg`. Note that the image IDs are not unique across categories, e.g. `train/1/00000.jpg` and `train/2/00000.jpg` are both within the training set.
 
-The validation set ([validation.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/validation.tar.gz), 3 GB) contains 2,679 images that are organized similarly to the training set, i.e. as subfolders `validation/<category>/<id>.jpg`.
+The validation set (`validation/` / `validation.tar.gz`, 3 GB) contains 2,679 images that are organized similarly to the training set, i.e. as subfolders `validation/<category>/<id>.jpg`.
 
-The test set ([test.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/test.tar.gz), 11 GB) contains 9,565 images without category subfolders, organized as `test/<id>.jpg`.
+The test set (`test/` / `test.tar.gz`, 11 GB) contains 9,565 images without category subfolders, organized as `test/<id>.jpg`.
 
 In the submission, use the entire filename, e.g. `00123.jpg` as the Id column.
 
@@ -82,11 +96,11 @@ In the submission, use the entire filename, e.g. `00123.jpg` as the Id column.
 ### Small Resized Dataset
 For convenience, we have also provided a small resized dataset, where each image has been resized (preserving aspect ratios) to have a maximum of 1024 pixels in the larger dimension. The split for the resized dataset is identical to the full dataset, and the IDs also match (e.g. `test/00123.jpg` and `small-test/00123.jpg` are the same specimen). All images are in JPEG format.
 
-The small training set ([small-train.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-train.tar.gz), 1.7 GB) is organized as subfolders `small-train/<category>/<id>.jpg`.
+The small training set (`small-train/` / `small-train.tar.gz`, 1.7 GB) is organized as subfolders `small-train/<category>/<id>.jpg`.
 
-The small validation set ([small-validation.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-validation.tar.gz), 135 MB) is organized as subfolders `small-validation/<category>/<id>.jpg`.
+The small validation set (`small-validation/` / `small-validation.tar.gz`, 135 MB) is organized as subfolders `small-validation/<category>/<id>.jpg`.
 
-The small test set ([small-test.tar.gz](https://storage.googleapis.com/nybg/herbarium-2019-fgvc6/small-test.tar.gz), 487 MB) is organized as `small-test/<id>.jpg`.
+The small test set (`small-test/` / `small-test.tar.gz`, 487 MB) is organized as `small-test/<id>.jpg`.
 
 * `md5sum small-train.tar.gz` should produce `8bf1985008dea8f79da1d9668b065543`
 * `md5sum small-validation.tar.gz` should produce `d7e8670238a54f13b8b729823a988004`
